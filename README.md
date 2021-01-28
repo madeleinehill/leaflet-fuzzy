@@ -1,8 +1,6 @@
 # leaflet-fuzzy
 
-> Made with create-react-library
-
-[![NPM](https://img.shields.io/npm/v/leaflet-fuzzy.svg)](https://www.npmjs.com/package/leaflet-fuzzy) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+Leaflet-Fuzzy ([demo](scrapethepast.com/leafletfuzzy)) allows for the encoding of fuzziness into polygons on Leaflet. Fuzziness can represent a transitional element or uncertainty in the extent of a geographic entity. Leaflet-Fuzzy provides a layer which can display geojson, with special properties including `blurIntensity`, as well as a special `FuzzyPolygon` component.
 
 ## Install
 
@@ -15,12 +13,52 @@ npm install --save leaflet-fuzzy
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'leaflet-fuzzy'
+import FuzzyPolygon from 'leaflet-fuzzy'
 import 'leaflet-fuzzy/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <FuzzyPolygon
+              positions={[
+                {lat: 39.40224434029275, lng: -106.095703125},
+                {lat: 37.19533058280065, lng: -105.732421875},
+                {lat: 33.94335994657882, lng: -105.205078125}
+              ]}
+              properties={
+                blurIntensity: 40,
+                fill: 0x0000ff
+              }
+            ></FuzzyPolygon>
+  }
+}
+```
+
+Equivalently,
+
+```jsx
+import React, { Component } from 'react'
+
+import Fuzzy from 'leaflet-fuzzy'
+import 'leaflet-fuzzy/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <FuzzyPolygon
+              data={[
+                {
+                  positions: [
+                    [
+                      {lat: 39.40224434029275, lng: -106.095703125},
+                      {lat: 37.19533058280065, lng: -105.732421875},
+                      {lat: 33.94335994657882, lng: -105.205078125}
+                    ]
+                  ],
+                  properties: {
+                    blurIntensity: 40,
+                    fill: 0x0000ff
+                  }
+              ]}
+            ></FuzzyPolygon>
   }
 }
 ```

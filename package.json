@@ -49,5 +49,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "leaflet-pixi-overlay": "^1.8.1",
+    "pixi.js": "^5.3.7"
+  }
 }

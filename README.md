@@ -13,8 +13,7 @@ npm install --save leaflet-fuzzy
 ```jsx
 import React, { Component } from 'react'
 
-import FuzzyPolygon from 'leaflet-fuzzy'
-import 'leaflet-fuzzy/dist/index.css'
+import { FuzzyPolygon } from 'leaflet-fuzzy'
 
 class Example extends Component {
   render() {
@@ -38,12 +37,11 @@ Equivalently,
 ```jsx
 import React, { Component } from 'react'
 
-import Fuzzy from 'leaflet-fuzzy'
-import 'leaflet-fuzzy/dist/index.css'
+import { FuzzyLayer } from 'leaflet-fuzzy'
 
 class Example extends Component {
   render() {
-    return <FuzzyPolygon
+    return <FuzzyLayer
               data={[
                 {
                   positions: [
@@ -58,7 +56,7 @@ class Example extends Component {
                     fill: 0x0000ff
                   }
               ]}
-            ></FuzzyPolygon>
+            ></FuzzyLayer>
   }
 }
 ```

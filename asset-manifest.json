@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/leafletfuzzy/static/js/main.19d5e264.chunk.js",
+    "main.js.map": "/leafletfuzzy/static/js/main.19d5e264.chunk.js.map",
+    "runtime-main.js": "/leafletfuzzy/static/js/runtime-main.bd9240ca.js",
+    "runtime-main.js.map": "/leafletfuzzy/static/js/runtime-main.bd9240ca.js.map",
+    "static/css/2.a710a312.chunk.css": "/leafletfuzzy/static/css/2.a710a312.chunk.css",
+    "static/js/2.a332ae98.chunk.js": "/leafletfuzzy/static/js/2.a332ae98.chunk.js",
+    "static/js/2.a332ae98.chunk.js.map": "/leafletfuzzy/static/js/2.a332ae98.chunk.js.map",
+    "index.html": "/leafletfuzzy/index.html",
+    "precache-manifest.6601f6d993b1ec8ec4ab79a8048718c1.js": "/leafletfuzzy/precache-manifest.6601f6d993b1ec8ec4ab79a8048718c1.js",
+    "service-worker.js": "/leafletfuzzy/service-worker.js",
+    "static/css/2.a710a312.chunk.css.map": "/leafletfuzzy/static/css/2.a710a312.chunk.css.map",
+    "static/js/2.a332ae98.chunk.js.LICENSE.txt": "/leafletfuzzy/static/js/2.a332ae98.chunk.js.LICENSE.txt",
+    "static/media/jsoneditor.css": "/leafletfuzzy/static/media/jsoneditor-icons.2b9b4872.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd9240ca.js",
+    "static/css/2.a710a312.chunk.css",
+    "static/js/2.a332ae98.chunk.js",
+    "static/js/main.19d5e264.chunk.js"
+  ]
+}

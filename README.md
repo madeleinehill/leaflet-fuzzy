@@ -1,6 +1,6 @@
 # leaflet-fuzzy
 
-Leaflet-Fuzzy ([demo](scrapethepast.com/leafletfuzzy)) allows for the encoding of fuzziness into polygons on Leaflet. Fuzziness can represent a transitional element or uncertainty in the extent of a geographic entity. Leaflet-Fuzzy provides a layer which can display geojson, with special properties including `blurIntensity`, as well as a special `FuzzyPolygon` component.
+Leaflet-Fuzzy ([demo](https://www.scrapethepast.com/leafletfuzzy)) allows for the encoding of fuzziness into polygons on Leaflet. Fuzziness can represent a transitional element or uncertainty in the extent of a geographic entity. Leaflet-Fuzzy provides a layer which can display geojson, with special properties including `blurIntensity`, as well as a special `FuzzyPolygon` component.
 
 ## Install
 

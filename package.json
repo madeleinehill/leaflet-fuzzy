@@ -1,10 +1,10 @@
 {
   "name": "leaflet-fuzzy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Made with create-react-library",
-  "author": "henryhill1999",
+  "author": "madeleinehill",
   "license": "MIT",
-  "repository": "henryhill1999/leaflet-fuzzy",
+  "repository": "madeleinehill/leaflet-fuzzy",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -23,9 +23,6 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
-  "peerDependencies": {
-    "react": "^16.0.0"
-  },
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
     "babel-eslint": "^10.0.3",
@@ -43,15 +40,20 @@
     "gh-pages": "^2.2.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
+  },
+  "dependencies": {
+    "react-jss": "^10.5.0",
+    "leaflet-pixi-overlay": "^1.8.1",
+    "pixi.js": "^5.3.7"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.13.1",
+    "leaflet": "^1.7.1",
+    "react-leaflet": "^3.1.0"
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "leaflet-pixi-overlay": "^1.8.1",
-    "pixi.js": "^5.3.7"
-  }
+  ]
 }

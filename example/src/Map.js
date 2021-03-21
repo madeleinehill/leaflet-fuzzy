@@ -2,7 +2,7 @@ import React from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { createUseStyles } from "react-jss";
-import { FuzzyLayer, FuzzyPolygon } from "leaflet-fuzzy";
+import { FuzzyLayer } from "../src";
 
 const useStyles = createUseStyles((theme) => ({
   map: {
@@ -51,17 +51,6 @@ const Map = (props) => {
           minZoom={2}
           maxZoom={10}
         />
-
-        {/* the below uses of FuzzyPolygon and FuzzyLayer are equivalent */}
-
-        {/* <FuzzyPolygon
-          positions={data[0].positions}
-          properties={data[0].properties}
-        ></FuzzyPolygon>
-        <FuzzyPolygon
-          positions={data[1].positions}
-          properties={data[1].properties}
-        ></FuzzyPolygon> */}
 
         <FuzzyLayer data={data}></FuzzyLayer>
       </MapContainer>

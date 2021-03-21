@@ -3,7 +3,7 @@ const geo = JSON.stringify({
   features: [
     {
       type: "Feature",
-      properties: { blurIntensity: 40, fill: "0x0000ff" },
+      properties: { blurIntensity: 40, fill: "0x0000ff", label: "Feature 1" },
       geometry: {
         type: "Polygon",
         coordinates: [
